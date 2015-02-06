@@ -7,7 +7,7 @@ zipped = False
 host = os.environ.get('collectionhq_host')
 user = os.environ.get('collectionhq_user')
 password = os.environ.get('collectionhq_password')
-local_directory = 'C:\\ProgramData\\Polaris\\SrServiceRoot\\hermione\\37\\scheduledjobs'
+local_directory = r'C:\ProgramData\Polaris\SrServiceRoot\hermione\37\scheduledjobs'
 filename_trunc = 'bib_Collection HQ data export_{}'.format(date.today().strftime('%m%d%Y'))
 filename = ''
 for f in os.listdir(local_directory):
