@@ -5,7 +5,7 @@ from ftplib import FTP
 host = os.environ.get('collectionhq_host')
 user = os.environ.get('collectionhq_user')
 password = os.environ.get('collectionhq_password')
-local_directory = r'C:\ProgramData\Polaris\SrServiceRoot\hermione\37\scheduledjobs'
+local_directory = r'C:\ProgramData\Polaris\SrServiceRoot\Ginny\37\scheduledjobs'
 filename_trunc = 'bib_Collection HQ data export_{}'.format(date.today().strftime('%m%d%Y'))
 logfile = 'log_collectionhq.txt'
 filename = ''
