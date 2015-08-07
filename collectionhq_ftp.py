@@ -19,7 +19,7 @@ def ftp_put(host, user, password, filename, directory):
     with open(full_filename, 'rb') as f:
         ftp.storbinary('STOR {}'.format(filename), f)
     with open(logfile, 'a') as f:
-        f.write('{}: {} uploaded from {}'.format(datetime.now(), filename, directory))
+        f.write('{}: {} uploaded from {}\n'.format(datetime.now(), filename, directory))
 
 if filename:
     full_filename = r'{}\{}'.format(local_directory, filename)
@@ -27,4 +27,4 @@ if filename:
     os.remove(full_filename)
 else:
     with open(logfile, 'a') as f:
-        f.write('{}: File not found to upload'.format(datetime.now()))
+        f.write('{}: File not found to upload\n'.format(datetime.now()))
